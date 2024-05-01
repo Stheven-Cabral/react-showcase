@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -29,5 +29,170 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 48px auto 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  font: inherit;
+  padding: 0.2rem 0.4rem;
+  width: 100%;
+  max-width: 30rem;
+  border: 1px solid #ccc;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  background: #fdf2d8;
+}
+
+button {
+  font: inherit;
+  background: #143d59;
+  border: 1px solid #143d59;
+  cursor: pointer;
+  color: white;
+  padding: 0.75rem 1rem;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover,
+button:active {
+  background: #055285;
+  border-color: #055285;
+}
+
+.projects header {
+  background: #143d59;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects h2 {
+  margin: 0;
+  color: white;
+}
+
+.projects ul {
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+}
+
+.projects li {
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.26);
+  padding: 1rem;
+  margin: 1rem;
+  background: white;
+}
+
+.projects li h2 {
+  color: #143d59;
+  margin: 0.5rem 0;
+}
+
+#finished-projects li h2 {
+  color: #f4b41a;
+}
+
+.projects li h3 {
+  color: #575757;
+  font-size: 1rem;
+}
+
+.project li p {
+  margin: 0;
+}
+
+.project-list {
+  margin: 1rem 0;
+  border-color: #143d59;
+  border-width: 0.1rem;
+}
+
+.project-list--finished {
+  border-color: #f4b41a;
+  border-width: 0.1rem;
+}
+
+.project-list--finished header {
+  background-color: #f4b41a;
+}
+
+.droppable {
+  background: #98bbd3;
+}
+
+#finished-projects .droppable {
+  background: #fdf2d8;
+}
+
+#user-input {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #143d59;
+  background: #f7f7f7;
+}
+
+@media (min-width: 576px) {
+  body {
+    width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  body {
+    width: 1320px;
   }
 }
